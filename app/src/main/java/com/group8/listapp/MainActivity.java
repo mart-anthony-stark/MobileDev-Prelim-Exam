@@ -1,6 +1,7 @@
 package com.group8.listapp;
  
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,8 +26,23 @@ public class MainActivity extends Activity {
 				@Override
 				public void onItemClick(AdapterView<?> arg0, View arg1, int position, long arg3) {
 					Toast.makeText(MainActivity.this, "" + names[position], Toast.LENGTH_SHORT).show();
+					navigate(position);
 				}
 			});
     }
-	
+	void navigate(int index){
+		Intent i = new Intent();
+		
+		switch(index){
+			case 0:
+				i = new Intent(MainActivity.this, MartActivity.class);
+				break;
+		}
+		try{
+			startActivity(i);
+		}catch(Exception e){
+			
+		}
+		
+	}
 } 

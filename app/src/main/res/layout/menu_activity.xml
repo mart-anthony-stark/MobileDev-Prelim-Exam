@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="#001219">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:gravity="center">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Profile Viewer"
+			android:textColor="#FFFFFF"
+			android:textSize="35sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Prelim Exam Output"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#E2E2E2"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:gravity="center">
+
+		<Button
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="View"
+			android:background="#098689"
+			android:textColor="#FFFEFE"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:id="@+id/viewBtn"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_weight="1.0"
+		android:padding="10dp"
+		android:gravity="bottom">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Developers:"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#CACACA"
+			android:textStyle="bold"
+			android:layout_marginBottom="10dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Mart Anthony Salazar"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#CDCDCD"
+			android:layout_marginBottom="8dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Warren Ereño"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#CDCDCD"
+			android:layout_marginBottom="8dp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rafael Ross Concepcion"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#CDCDCD"
+			android:layout_marginBottom="8dp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

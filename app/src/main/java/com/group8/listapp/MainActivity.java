@@ -19,7 +19,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 		
 		list = findViewById(R.id.list);
-		final String[] names = {"Mart Anthony", "Rafael","Warren"};
+		final String[] names = {"Mart Anthony Salazar", "Rafael Ross Conception","Warren Ereño", "John Homer Dar", "Reby Angelo Secretario"};
 		ListAdapter adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, names);
 		list.setAdapter(adapter);
 		list.setOnItemClickListener(new OnItemClickListener() {
@@ -37,6 +37,11 @@ public class MainActivity extends Activity {
 			case 0:
 				i = new Intent(MainActivity.this, MartActivity.class);
 				break;
+			case 3:
+				i = new Intent(MainActivity.this, HomerActivity.class);
+				break;
+			case 4:
+				i = new Intent(MainActivity.this, RebyActivity.class);
 		}
 		try{
 			startActivity(i);
